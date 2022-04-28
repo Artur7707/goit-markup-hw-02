@@ -9,6 +9,7 @@
    --secondary-text-color: #757575;
    --accent-color: #2196F3;
    --button-background: #F5F4FA;
+   --white: #ffffff;
 }
 
 body {
@@ -80,6 +81,35 @@ ul {
   color: var(--secondary-text-color);
 }
 
+/* Hero index.html */
+
+.hero {
+    
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
 
 /* Buttons */
 
@@ -98,6 +128,45 @@ ul {
     cursor: pointer;
 } 
 
+/* Fonts/colors index.html */
+
+.heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; 
+}
+
+.heading-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+
+/* Mail porfolio */
+
+
 .title {
     font-weight: 700;
     font-size: 18px;
@@ -106,7 +175,7 @@ ul {
 }
 
 .text {
-        font-size: 16px;
+    font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
 }
@@ -133,7 +202,7 @@ ul {
 
 .footer-mail,
 .footer-phone {
-        font-size: 14px;
+    font-size: 14px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.6);
 }
