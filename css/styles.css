@@ -207,9 +207,14 @@ ul {
     color: #FFFFFF;
 }
 
-.footer-mail,
-.footer-phone {
+.footer-link,
+.footer-link {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--white);
 }
