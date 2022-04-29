@@ -18,6 +18,10 @@ body {
     letter-spacing: 0.03em;
     }
 
+address {
+    font-style: normal;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -50,15 +54,21 @@ ul {
 
 /* Header */
 
-.header {
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
 
 
 /* Header-nav */
+
+.link-nav,
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact-link {
+    color: var(--secondary-text-color);
+}
 
 .link-nav:hover,
 .link-nav:focus {
@@ -69,17 +79,11 @@ ul {
     color: var(--accent-color);
 }
 
-.mail:hover,
-.mail:focus,
-.phone:hover,
-.phone:focus{
-    background-color: var(--accent-color);
+.contact-link:hover,
+.contact-link:focus  {
+    color: var(--accent-color);
 }
 
-.mail,
-.phone {
-  color: var(--secondary-text-color);
-}
 
 /* Hero index.html */
 
@@ -99,13 +103,12 @@ ul {
 }
 
 .hero-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+    border: none;
     color: var(--white);
     background-color: var(--accent-color);
 }
@@ -121,19 +124,27 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border: none;
 }
 
-.btn:hover {
+.btn.current {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn:hover,
+.btn:focus {
     background-color: var(--accent-color);
     cursor: pointer;
+    color: var(--white);
 } 
 
 /* Fonts/colors index.html */
 
 .heading {
-    font-weight: 700;
     font-size: 14px;
-    line-height: 1.14; 
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .heading-text {
@@ -143,8 +154,7 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.headline {
-    font-weight: 700;
+.section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -167,14 +177,14 @@ ul {
 /* Mail porfolio */
 
 
-.title {
+.project-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.text {
+.project-text {
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
@@ -186,13 +196,10 @@ ul {
     background: #2F303A;
 }
 
-.footer-logo-link {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+.logo-footer {
     color: #FFFFFF;
 }
+
 
 .adress {
         font-size: 14px;
@@ -203,6 +210,6 @@ ul {
 .footer-mail,
 .footer-phone {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
